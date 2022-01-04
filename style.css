@@ -142,10 +142,7 @@ ul.dashed > li:before {
 .card .body .list .space {
   display: block;
   position: relative;
-  cursor: pointer;
-}
-.card .body .list .space :hover{
-
+  cursor:initial;
 }
 .font-lg {
   font-size: 18px;
@@ -172,6 +169,12 @@ ul.dashed > li:before {
     margin: 0 auto;
     width: 400px;
   }
+  .tab-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -188,7 +191,7 @@ ul.dashed > li:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 100%;
   }
 }
 
@@ -200,13 +203,13 @@ ul.dashed > li:before {
     box-shadow: 0 1px 2px var(--shadow-1);
     padding: 10px;
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
   }
   .tab-menu {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 100%;
   }
 }
 
@@ -224,7 +227,7 @@ ul.dashed > li:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 800px;
+    width: 100%;
   }
 }
 
