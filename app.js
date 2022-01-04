@@ -28,7 +28,6 @@ const tabItem = document.querySelectorAll(".tab");
 tabItem.forEach((tab) => {
     tab.addEventListener("click", () => {
         // Set active for current tab
-        console.log(tab.getAttribute("data-tab"));
         tabItem.forEach((temp) => {
             temp.classList.remove("active")
         })
@@ -53,7 +52,7 @@ const timeslapse = 2000;
 let count = 1;
 var changeWallpaper = setInterval(() => {
     count++;
-    wallpaper.src = wallpaper.src.substring(0,22).concat(`wallpaper${count}.jpg`);
+    wallpaper.src = wallpaper.src.substring(0,wallpaper.src.lastIndexOf("/")).concat(`wallpaper${count}.jpg`);
     if(count >= 4){
         count = 0;
     }
