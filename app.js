@@ -52,7 +52,8 @@ const timeslapse = 2000;
 let count = 1;
 var changeWallpaper = setInterval(() => {
     count++;
-    wallpaper.src = wallpaper.src.substring(0,wallpaper.src.lastIndexOf("/")).concat(`wallpaper${count}.jpg`);
+    console.log(wallpaper.src.lastIndexOf("/"));
+    wallpaper.src = wallpaper.src.substring(0,wallpaper.src.lastIndexOf("/") + 1).concat(`wallpaper${count}.jpg`);
     if(count >= 4){
         count = 0;
     }
