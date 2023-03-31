@@ -106,7 +106,10 @@ a {
   display: flex;
   flex-direction: column;
 }
+.card .body .list div.item {
+  border-bottom: 0.5px solid rgb(163, 163, 163);
 
+}
 .card .body .list .item {
   text-align: left;
   display: flex;

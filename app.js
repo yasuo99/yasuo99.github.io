@@ -48,7 +48,7 @@ const wallpaper = document.querySelector("#wall");
 console.log(wallpaper.src);
 
 // Automatically change wallpaper by timeslapse
-const timeslapse = 2000;
+const timeslapse = 3000;
 let count = 1;
 var changeWallpaper = setInterval(() => {
     count++;
